@@ -5,15 +5,20 @@
 	<meta charset="utf-8">
 	<style type="text/css">
 		th {
-			padding: 10px;
+			padding: 7px;
 		}
 
 		td {
-			padding: 15px;
+			padding: 10px;
 		}
-		.header {
+		#header {
 			text-align: center;
-			background-color: ; 
+			display: flex;
+			flex-direction:col;
+			padding: 10px;
+			margin: 0;
+
+			background-color: rgba(242, 242, 242, .8); 
 		     color: #696757;
 		}
 
@@ -29,16 +34,26 @@
 		}
 		.table {
 			
-			background-color: rgba(242, 242, 242, .2);
+			background-color: rgba(242, 242, 242, .7);
 			align-items: center;
 			justify-content: center;
 
 		}
+		li {
+			list-style: none;
+		}
 	</style>
 </head>
 <body>
-	<header class="header">
-	<h2>Data Base for Financial Discipline <br> (1) Organisers, (2)  Moderator, (3) Teachers<br> (4) Translator,(5) Follow-up Coordinators (6) Others </h2></header>
+	<header id="header">
+	<h1>Data Base for Financial Discipline </h1><h2> (1) Organisers, (2)  Moderator, (3) Teachers<br> (4) Translator, (5) Follow-up Coordinators (6) Others </h2>
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">FD</a></li>
+</ul>
+<nav>
+</header>
 	<div class="background">
 	<table  class="table"   align="center" border="1">
 		<tr>
@@ -130,7 +145,11 @@
 	 </select>
 			</td>
 			<td>
+				<select>
+					<option>
 				Constituency 
+					</option>
+				</select>
 			</td>
 			<td>
 				<select>
@@ -147,20 +166,7 @@
 					<option>4</option>
 					<option>5</option>
 					<option>6</option>
-				</select><select>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-					<option>6</option>
-				</select><select>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-					<option>6</option>
+				
 				</select>
 			</td>
 		</tr>
